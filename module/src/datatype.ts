@@ -1,0 +1,1 @@
+// basic datatype of typescript

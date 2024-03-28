@@ -1,0 +1,1 @@
+const bongbang = "its bongbang"
