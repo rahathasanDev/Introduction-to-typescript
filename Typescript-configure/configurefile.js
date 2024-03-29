@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // Here how you can configure your typescript file 
 // How to organize your folder and file in typescipt
 /*
