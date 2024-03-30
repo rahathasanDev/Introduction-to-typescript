@@ -1,4 +1,16 @@
 {
+
+  // Type Vs Interface
+  {
+    interface Employee1 extends Person {
+      employeeId: number;
+    }
+
+    // Or
+
+    type Employee2 = Person & { employeeId: number };
+  }
+
   // interface
   interface Person {
     firstName: string;

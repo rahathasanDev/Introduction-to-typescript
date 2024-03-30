@@ -18,5 +18,5 @@ let rollList : number[] = [12,22,33]
 
 
 // TUPLE -->one kind of array but you should defined the type
-let ageName : [number,string] = [50 , 'rakib']
+let ageName : [number,string] = [50 , 'rakib'];
 let tuplehere : [number,string,boolean] = [50 , 'rakib',true];
