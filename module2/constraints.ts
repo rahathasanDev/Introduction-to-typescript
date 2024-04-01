@@ -35,7 +35,7 @@ printLength(objWithLength); // Output: Length: 45
 
 // Incorrect usage with an object missing 'length' property 
 // TypeScript will throw a compile-time error because the constraint is violated
-printLength({ length: 45 }); 
+printLength({ length: 45 }); //error function calling
 // Error: Argument of type '{ length: number; }' is not assignable to parameter of type 'string | number[]'.
 
 
