@@ -1,6 +1,7 @@
 // Reference Type 
 
 
+
 let obj1 = { key: 'value' };
 let obj2 = obj1; // obj2 now references the same object as obj1
 obj2.key = 'new value';
