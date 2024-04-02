@@ -6,6 +6,8 @@ function add(x: number, y: number): number {
 const result: number = add(3, 5); // result will be 8
 
 // Optional and Default Parameters:
+// In TypeScript, a parameter is considered optional if it has a default value assigned to it or if it's explicitly marked as optional using the ? syntax. In your function greet, the greeting parameter is optional because it has a default value assigned to it:
+
 function greet(name: string, greeting: string = "Hello"): void {
   console.log(`${greeting}, ${name}!`);
 }
