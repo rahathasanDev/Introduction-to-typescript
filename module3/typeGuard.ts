@@ -30,19 +30,43 @@
 
 
 {// instanceof type guard
-  class MyClass {
-    // class definition
+  class Vehicle {
+    drive() {
+      console.log("Driving...");
+    }
   }
 
-  function isMyClass(obj: any): obj is MyClass {
-    return obj instanceof MyClass;
+  class Car extends Vehicle {
+    honk() {
+      console.log("Honking...");
+    }
   }
 
-  let example: any = new MyClass();
-  if (isMyClass(example)) {
-    // TypeScript knows that example is an instance of MyClass here
-    example.someMethod();
+  class Bicycle extends Vehicle {
+    ringBell() {
+      console.log("Ring ring...");
+    }
   }
+
+  function useVehicle(vehicle: Vehicle) {
+    if (vehicle instanceof Car) {
+      vehicle.drive();
+      vehicle.honk(); // Access Car-specific method
+    } else if (vehicle instanceof Bicycle) {
+      vehicle.drive();
+      vehicle.ringBell(); // Access Bicycle-specific method
+    } else {
+      vehicle.drive(); // Access Vehicle method
+    }
+  }
+
+  let myCar = new Car();
+  let myBicycle = new Bicycle();
+  let genericVehicle = new Vehicle();
+
+  useVehicle(myCar); // Output: Driving... Honking...
+  useVehicle(myBicycle); // Output: Driving... Ring ring...
+  useVehicle(genericVehicle); // Output: Driving...
 
 
 }
